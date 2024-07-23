@@ -16,13 +16,12 @@ body {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-color: var(--white);
   margin: 0;
-  height: 150vh;
   display: grid;
 }
 
 nav {
   height: 12vh;
-  position: fixed;
+  position: sticky;
   top: 0px;
   width: 100%;
   display: flex;
@@ -123,3 +122,35 @@ nav #options {
 }
 
 /* ######### */
+
+/* for static styles*/
+
+.normal-text {
+  color: var(--btn-c2);
+}
+
+.strong-text {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+/* ######### */
+
+#start-section {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-areas: "h1 img";
+  justify-self: center;
+  width: 90vw;
+  height: 70vh;
+}
+
+#start-section img {
+  grid-area: img;
+  display: inline-block;
+  height: 400px;
+}
+
+#start-section div {
+  grid-area: h1;
+}
