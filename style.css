@@ -20,6 +20,7 @@ body {
 }
 
 nav {
+  background-color: var(--white);
   height: 12vh;
   position: sticky;
   top: 0px;
@@ -153,4 +154,28 @@ nav #options {
 
 #start-section div {
   grid-area: h1;
+}
+
+#second-section {
+  text-align: center;
+  display: grid;
+  height: 50vh;
+  justify-self: center;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.content {
+  align-content: center;
+  justify-content: space-between;
+  grid-template-columns: 30% 30% 30%;
+  display: grid;
+}
+
+.content i {
+  font-size: 2rem;
+  background-color: var(--light-bg-color);
+  color: var(--btn-c2);
+  padding: 12px;
+  border-radius: 50%;
 }
