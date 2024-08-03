@@ -79,17 +79,8 @@ nav #options {
   background-color: var(--white);
 }
 
-#signup {
-  background-color: var(--dark-bg-color);
-  color: var(--accent-color);
-}
-
 #login:hover {
   background-color: var(--light-bg-color);
-}
-
-#signup:hover {
-  background-color: #1c113d;
 }
 
 #options i {
@@ -125,6 +116,19 @@ nav #options {
 /* ######### */
 
 /* for static styles*/
+
+.btns {
+  transition-duration: 150ms;
+  border-radius: var(--border-radius);
+  border: none;
+  padding: 12px;
+  background-color: var(--dark-bg-color);
+  color: var(--accent-color);
+}
+
+.btns:hover {
+  background-color: #1c113d;
+}
 
 .normal-text {
   color: var(--btn-c2);
