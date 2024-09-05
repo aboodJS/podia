@@ -1,11 +1,10 @@
 :root {
   --white: #ffffff;
-  --accent-color: #fdfbf9;
-  --btn-color: #fdfbf9;
-  --btn-c2: #9484c6;
-  --dark-bg-color: #201445;
-  --light-bg-color: #f5efeb;
-  --border-radius: 25px;
+  --white-2: #fdfbf9;
+  --dark-blue: #4b2aad;
+  --violet: #9484c6;
+  --night: #201445;
+  --paint: #f5efeb;
 }
 
 * {
@@ -13,173 +12,64 @@
 }
 
 body {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-color: var(--white);
   margin: 0;
   display: grid;
 }
 
 nav {
-  background-color: var(--white);
-  height: 12vh;
-  position: sticky;
-  top: 0px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
   justify-self: center;
+  width: 90%;
+  display: flex;
+  background-color: transparent;
   align-items: center;
+  justify-content: space-between;
 }
 
-nav h2 {
-  color: var(--dark-bg-color);
-  font-family: sans-serif;
-  margin: 0;
-}
-
-nav > ul {
-  height: 12vh;
+nav * {
   padding: 0;
+  height: 100%;
   display: flex;
   align-items: center;
-  list-style: none;
-  justify-content: space-around;
 }
 
-nav #options {
-  width: 52%;
-}
-
-#options li {
-  display: flex;
-  align-items: center;
-  border-radius: 25px;
-  padding: 12px;
-  transition-duration: 50ms;
-  border: 4px solid var(--white);
-}
-
-#options > li:hover {
-  border-color: var(--light-bg-color);
-  background-color: var(--light-bg-color);
-}
-
-#buttons {
-  width: 15%;
-}
-
-#buttons > * {
-  transition-duration: 150ms;
-  border-radius: var(--border-radius);
-  border: none;
-  padding: 12px;
-}
-
-#login {
-  background-color: var(--white);
-}
-
-#login:hover {
-  background-color: var(--light-bg-color);
-}
-
-#options i {
-  font-size: 1.5rem;
-}
-
-.dropdown-opt {
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-.dropmenu {
-  display: none;
-  padding: 0;
-  position: absolute;
-  top: 120%;
-  background-color: var(--white);
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.438);
-  border-radius: 6px;
-}
-
-/* for interactive classes/styles with js*/
-
-.show {
-  display: block;
-}
-
-.focus {
-  border-color: var(--btn-c2);
-}
-
-/* ######### */
-
-/* for static styles*/
-
-.btns {
-  transition-duration: 150ms;
-  border-radius: var(--border-radius);
-  border: none;
-  padding: 12px;
-  background-color: var(--dark-bg-color);
-  color: var(--accent-color);
-}
-
-.btns:hover {
-  background-color: #1c113d;
-}
-
-.normal-text {
-  color: var(--btn-c2);
-}
-
-.strong-text {
-  font-size: 2rem;
-  font-weight: bolder;
-}
-
-/* ######### */
-
-#start-section {
-  display: grid;
+#menus {
+  width: 30vw;
   justify-content: space-evenly;
-  grid-template-areas: "h1 img";
-  justify-self: center;
-  width: 90vw;
-  height: 70vh;
+  list-style: none;
 }
 
-#start-section img {
-  grid-area: img;
-  display: inline-block;
-  height: 400px;
-}
-
-#start-section div {
-  grid-area: h1;
-}
-
-#second-section {
-  text-align: center;
-  display: grid;
-  height: 50vh;
-  justify-self: center;
-  justify-content: center;
-  align-content: space-between;
-}
-
-.content {
-  align-content: center;
+#forms {
+  width: 16vw;
   justify-content: space-between;
-  grid-template-columns: 30% 30% 30%;
-  display: grid;
 }
 
-.content i {
-  font-size: 2rem;
-  background-color: var(--light-bg-color);
-  color: var(--btn-c2);
-  padding: 12px;
-  border-radius: 50%;
+#forms button {
+  height: 60%;
+  border-radius: 24px;
+  padding-inline: 1rem;
+}
+
+.section-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.section-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#sign-up-section {
+  background-color: var(--night);
+}
+
+footer {
+  background-color: var(--paint);
+  display: grid;
+  align-content: center;
+}
+
+footer ul {
+  display: flex;
 }
