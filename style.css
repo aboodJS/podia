@@ -5,6 +5,7 @@
   --violet: #9484c6;
   --night: #201445;
   --paint: #f5efeb;
+  --trans-dur: 200ms;
 }
 
 * {
@@ -34,8 +35,20 @@ nav * {
 
 #menus {
   width: 30vw;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style: none;
+}
+
+#menus li {
+  transition: var(--trans-dur);
+
+  height: 30px;
+  padding-inline: 24px;
+  border-radius: 30px;
+}
+
+#menus li:hover {
+  background-color: var(--paint);
 }
 
 #forms {
@@ -47,6 +60,26 @@ nav * {
   height: 60%;
   border-radius: 24px;
   padding-inline: 1rem;
+  border: none;
+  font-weight: bold;
+  transition: var(--trans-dur);
+}
+
+#login {
+  background-color: transparent;
+}
+
+#login:hover {
+  background-color: var(--paint);
+}
+
+#signup {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+#signup:hover {
+  background-color: var(--night);
 }
 
 .section-grid {
