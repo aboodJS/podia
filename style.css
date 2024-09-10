@@ -56,7 +56,7 @@ nav * {
   justify-content: space-between;
 }
 
-#forms button {
+button {
   height: 60%;
   border-radius: 24px;
   padding-inline: 1rem;
@@ -65,20 +65,20 @@ nav * {
   transition: var(--trans-dur);
 }
 
-#login {
+.login {
   background-color: transparent;
 }
 
-#login:hover {
+.login:hover {
   background-color: var(--paint);
 }
 
-#signup {
+.signup {
   background-color: var(--dark-blue);
   color: var(--white);
 }
 
-#signup:hover {
+.signup:hover {
   background-color: var(--night);
 }
 
@@ -105,4 +105,30 @@ footer {
 
 footer ul {
   display: flex;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+}
+
+figure img {
+  width: 400px;
+  height: 400px;
+}
+
+#digital-products {
+  justify-self: center;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+#digital-products p,
+#digital-products h1 {
+  font-size: 2.5rem;
+
 }
