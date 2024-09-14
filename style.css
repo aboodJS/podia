@@ -147,12 +147,18 @@ figure img {
 
 .between {
   display: grid;
-  text-align: center;
   justify-self: center;
+  justify-content: center;
 }
 
 .between * {
-  text-align: center;
+  justify-self: center;
+}
+
+.between img {
+  align-self: center;
+  justify-self: center;
+  height: 50%;
 }
 
 .grid-div {
