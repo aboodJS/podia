@@ -117,7 +117,14 @@ footer {
 }
 
 footer ul {
+  margin-left: 5vw;
   display: flex;
+  width: 30vw;
+  list-style: none;
+}
+
+footer ul li {
+  margin-inline: 5px;
 }
 
 figure {
