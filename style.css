@@ -111,12 +111,15 @@ button {
 }
 
 footer {
+  height: 50vh;
   background-color: var(--paint);
   display: grid;
+  gap: inherit;
   align-content: center;
 }
 
 footer ul {
+  font-size: larger;
   margin-left: 5vw;
   display: flex;
   width: 30vw;
@@ -143,13 +146,14 @@ figure img {
 #digital-products {
   justify-self: center;
   width: 90%;
+  align-self: center;
   justify-content: center;
   align-items: center;
 }
 
 #digital-products p,
 #digital-products h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .between {
@@ -191,4 +195,8 @@ box-icon {
   height: 40px;
   width: 40px;
   background-color: #f5efeb;
+}
+
+.strong {
+  font-weight: bolder;
 }
