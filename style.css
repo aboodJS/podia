@@ -28,10 +28,10 @@ nav {
   position: fixed;
   top: 0;
   justify-self: center;
-  width: 100%;
+  width: 120%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 nav * {
@@ -199,4 +199,9 @@ box-icon {
 
 .strong {
   font-weight: bolder;
+}
+
+.focus {
+  background-color: var(--paint);
+  outline: 3px solid var(--violet);
 }
