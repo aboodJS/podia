@@ -22,6 +22,7 @@ body {
 }
 
 nav {
+  transition-duration: var(--trans-dur);
   height: 10vh;
   background-color: var(--white);
   z-index: 9;
@@ -49,12 +50,17 @@ nav * {
 
 #menus li {
   cursor: pointer;
-
+  margin-inline: 7px;
   transition: var(--trans-dur);
 
   height: 30px;
   padding-inline: 10px;
   border-radius: 30px;
+  transition-duration: 100ms;
+}
+
+#menu li box-icon {
+  background-color: none;
 }
 
 #menus li:hover {
@@ -64,6 +70,24 @@ nav * {
 #forms {
   width: 16vw;
   justify-content: space-between;
+}
+
+.sub-menu {
+  position: relative;
+}
+
+.sub-menu div {
+  border-radius: 8px;
+  display: none;
+  background-color: var(--paint);
+  top: 40px;
+  height: fit-content;
+  width: 300px;
+  position: absolute;
+}
+
+.sub-menu div ul {
+  display: block;
 }
 
 button {
@@ -187,7 +211,7 @@ figure img {
   justify-self: center;
 }
 
-box-icon {
+section box-icon {
   color: #9484c6;
   padding: 4px;
   justify-self: center;
