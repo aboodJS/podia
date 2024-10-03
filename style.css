@@ -77,9 +77,9 @@ nav * {
 }
 
 .sub-menu div {
-  border-radius: 8px;
   display: none;
-  background-color: var(--paint);
+  border-radius: 8px;
+  background-color: var(--white-2);
   top: 40px;
   height: fit-content;
   width: 300px;
@@ -229,4 +229,17 @@ section box-icon {
 .focus {
   background-color: var(--paint);
   outline: 3px solid var(--violet);
+}
+
+.focus div {
+  padding: 1rem;
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+}
+
+.focus div ul {
+  display: grid;
+  height: inherit;
+  width: inherit;
 }

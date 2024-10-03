@@ -21,7 +21,7 @@ listItems.forEach((el, i) => {
     el.classList.add("focus");
     subMenus.forEach((elem, i) => {
       if (elem.classList.contains("focus")) {
-        elem.children[1].style.display = "block";
+        elem.children[1].style.display = "flex";
       } else {
         elem.children[1].style.display = "none";
       }
