@@ -13,18 +13,8 @@ window.onscroll = () => {
   console.log(yaxis);
 };
 
-listItems.forEach((el, i) => {
+listItems.forEach((el) => {
   el.addEventListener("click", () => {
-    for (let i = 0; i < listItems.length; i++) {
-      listItems[i].classList.remove("focus");
-    }
-    el.classList.add("focus");
-    subMenus.forEach((elem, i) => {
-      if (elem.classList.contains("focus")) {
-        elem.children[1].style.display = "flex";
-      } else {
-        elem.children[1].style.display = "none";
-      }
-    });
+    el;
   });
 });
